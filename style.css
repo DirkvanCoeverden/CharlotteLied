@@ -1,0 +1,114 @@
+body {
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-color: olivedrab;
+    background-color:rgb(114, 100, 83);
+  }
+
+div.charLotte {
+    position: relative;
+    background: cornflowerblue;
+    background: lightblue;
+    border: 7px solid cornsilk;
+    width: 600px;
+    height: 370px;
+    left: 100px;
+    top: 20px;
+    overflow:hidden;
+}
+
+
+
+div.gedicht {
+    position: absolute;
+    color: red;
+    color: cornsilk;
+    color: black;
+    top: 410px;
+    left: 270px;
+    animation-name: gedicht;
+    animation-duration: 73s;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+}
+
+@keyframes gedicht {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-880px);
+    }
+}
+
+div.youHaveFriend {
+    position: absolute;
+    color: red;
+    color: black;
+    color: cornsilk;
+    font-size: 23px;
+    top: 120px;
+    left: 270px;
+    opacity: 0;
+    animation-name: youHaveFriend;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 51s;
+}
+
+@keyframes youHaveFriend {
+    from {
+        /* transform: translateY(0px); */
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        /* transform: translateY(-135px); */
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+div.voorCharlotte {
+    position: absolute;
+    color: green;
+    color: cornsilk;
+    font-style: italic;
+    font-size: 18px;
+    left: 20px;
+    bottom: -66px;
+    animation-name: voorCharlotte;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 51s;
+}
+
+@keyframes voorCharlotte {
+    from {
+        /* opacity: 0; */
+        transform: translateY(0px);
+    }
+    to {
+        /* opacity: 1; */
+        transform: translateY(-60px);
+    }
+}
+
+img.wolkje {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: rotate(-7deg)
+} 
+
+img.zon {
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    opacity: 0.7;
+}
+
+img.charMetHaarHond {
+    position: relative;
+    transform: scale(0.3)
+}
